@@ -127,5 +127,8 @@
       }
     }
   },
-  "defaultProject": "cabbookingsystem"
+  "defaultProject": "cabbookingsystem",
+  "cli": {
+    "analytics": "61afc371-abf0-4d76-9baa-94ef7716d546"
+  }
 }
