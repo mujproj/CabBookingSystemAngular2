@@ -1,0 +1,113 @@
+<style>
+    #homecontent{
+    background-image: url("https://ns.yatracdn.com/common/images/fresco/fresco-footer-images/corona/car-guidlines/01.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+    
+    .left-image{
+        background-image: url("https://webstockreview.net/images/cellphone-clipart-person-5.jpg");
+        background-repeat: no-repeat;
+        float:left; 
+        width:33%; 
+        height:50%; 
+        border:solid black; 
+        margin: auto;
+    }
+    .text-content{
+        width:100%; 
+        height:600px; 
+        padding-top:20px; 
+        padding-left:15px; 
+        padding-right:15px;
+        margin: auto;
+    }
+    .center{
+        float:left; 
+        width:33%; 
+        height:70%; 
+        background-color: black;
+        border:solid black; 
+        margin-left:20px;
+        padding-top: 10%;
+        text-align: center;
+        left:50%;
+        margin-top: 10%;
+        color: white;
+        opacity: 0.8;
+        font-size: larger;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-style: italic;
+    }
+    .right-image{
+        background-image: url("https://i.insider.com/5cd5c0a1021b4c13135f4007?width=1200&format=jpeg");
+        float:right; 
+        width:30%; 
+        height:50%; 
+        background-color:white; 
+        border:solid black;
+        opacity: 0.8;
+    }
+</style>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">PickMeCab</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarText">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">About Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Help?</a>
+        </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search Your Location</button>
+      </form>
+      &nbsp;
+      <span class="navbar-text">
+        <div class="btn-group">
+            <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Login
+              <span class="fa fa-sign-in"></span>
+            </button>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">Login As A Customer</a>
+              <a class="dropdown-item" href="#">Login As A Admin</a>
+            </div>
+        </div>
+        <div class="btn-group">
+            <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Register
+              <span class="fa fa-user"></span>
+            </button>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" [routerLink]="['/customerRegister']">Register User</a>
+            </div>
+        </div>
+      </span>
+    </div>
+</nav>
+<div id="homecontent">
+    <div class="text-content">
+        <div class="left-image">
+
+        </div>
+        <div class="center">
+            <p>Book A Cab AnyWhere, Anytime</p>
+            <p>Get the best fares with atmost security and end to end pickup and drop facility</p>
+        </div>
+        <div class="right-image">
+
+        </div>
+    </div>
+</div>
+<router-outlet></router-outlet>
